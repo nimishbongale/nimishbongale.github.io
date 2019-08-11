@@ -74,6 +74,17 @@ body{
     font-family: 'Questrial', sans-serif;
 }
 
+.snowflake {
+    position: fixed;
+    background-color: gray;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px; 
+  }
+
 .emoji {
     width:18px;
     height:18px;
@@ -451,6 +462,6 @@ body{
   --bg-color: #fff;
   --text-color: rgb(10, 10, 10);
   --blog-gray-color: rgb(80, 80, 80);
-  --background-image: linear-gradient(90deg, rgba(10, 10, 10, 0.4), rgb(10, 10, 10, 0.4)), url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=500&h=1000&q=80&fit=crop");
+  --background-image: linear-gradient(90deg, rgba(10, 10, 10, 0.4), rgb(10, 10, 10, 0.4)), url("https://i.ibb.co/4N70ZH2/orlova-maria-b-U8-Te-Xhs-Pc-Y-unsplash.jpg");
   --background-background: #fff;
 }
