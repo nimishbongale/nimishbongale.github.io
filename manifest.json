@@ -1,5 +1,18 @@
 {
     "short_name": "nimishbongale",
     "name": "Nimish Bongale",
-    "theme-color": "#000"
+    "theme-color": "#000",
+    "icons": [
+        {
+            "src": "https://www.freelogoservices.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfX16vZ709U6kGTgG83PyYV9wJ6zHl5i...Rp8vg4KR8E5EdO3U1ON5MwiSF9VIURhRlj...CncZ9QdEiMhi2kJVg==",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "https://www.freelogoservices.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfX16vZ709U6kGTgG83PyYV9wJ6zHl5i...Rp8vg4KR8E5EdO3U1ON5MwiSF9VIURhRlj...CncZ9QdEiMhi2kJVg==",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "display": "standalone"
 }
