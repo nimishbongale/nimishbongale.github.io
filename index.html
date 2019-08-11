@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nimish Bongale - My personal portfolio</title>
+    <title>Nimish Bongale - My personal website</title>
+    <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -147,8 +149,8 @@
                 document.getElementById("loading").classList.remove("animated");
                 document.getElementById("loading").classList.remove("fadeOut");
                 document.getElementById("loading").style.display = "none";
-            }, 0);//800
-        }, 0);//1500
+            }, 400);
+        }, 800);
         $.getJSON("blog.json", function (blog) {
             blog = blog || [];
             if (blog.length == 0) {
