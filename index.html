@@ -44,14 +44,16 @@
 
     <div id="display">
         <div id="work">
-            <span>
-                <h1>&nbsp;
-                    <u class="typewrite" data-period="2000"
-                        data-type='[ "Hello, I&#39;m Nimish Bongale.", "An Engineering Student.", "A Freelancer.","A Software Developer."]'>
-                    </u>
-                </h1>
-            </span>
-            <div class="projects" id="work_section">
+            <h1>&nbsp;
+                <u class="typewrite" data-period="2000"
+                    data-type='[ "Hello, I&#39;m Nimish Bongale.", "An Engineering Student.", "A Freelancer.","A Software Developer."]'>
+                </u>
+            </h1>
+        </div>
+
+        <div id="forks" style="display:block">
+            <h1><u>Github Repositories</u></h1>
+            <div class="projects" id="forks_section">
                 <a href="https://github.com/nimishbongale/BongChess" target="_blank" rel="noopener">
                     <section>
                         <div class="section_title">BongChess</div>
@@ -126,22 +128,53 @@
                 </a>
             </div>
         </div>
-        <div id="forks" style="display:block">
-            <div class="projects" id="forks_section"></div>
+
+        <div id="afterforks" style="display:block">
+            <h1><u>Projects</u></h1>
+            <div class="projects" id="forks_section1">
+            </div>
         </div>
+
+        <div id="afterforks" style="display:block">
+            <h1><u>Research Work</u></h1>
+            <div class="projects" id="forks_section1">
+            </div>
+        </div>
+
+        <div id="afterforks" style="display:block">
+            <h1><u>Resume</u></h1>
+            <div class="projects" id="forks_section1">
+                <h2>Tech Stack</h2>
+                <h2>Experience</h2>
+                <h2>Skills</h2>
+                <h2>Education</h2>
+            </div>
+        </div>
+
+        <div id="afterforks" style="display:block">
+            <h1><u>Portfolio</u></h1>
+            <div class="projects" id="forks_section2">
+                <h2>Course Summary</h2>
+                <h2>Recognitions</h2>
+                <h2>Professional Development</h2>
+                <h2>Community Engagement</h2>
+            </div>
+        </div>
+
         <div id="blog_section" style="display:none">
             <div id="blogs">
             </div>
         </div>
         <div id="footer">
             <a href="https://github.com/nimishbongale" target="_blank" rel="noopener">Made with <i
-                    class="fas fa-heart"></i> by Nimish
+                    class="fas fa-heart"></i>
+                by Nimish
                 Bongale</a>
         </div>
     </div>
 
     <div id="snowflakeContainer">
-        <span class="snowflake" style="display: block" id="showsnow"></span>
+        <span class="snowflake" style="display: block"></span>
     </div>
 
     <script type="text/javascript">
@@ -193,13 +226,13 @@
     <script>
         /* var windowWidth = $(window).width();
 
-         $('body').mousemove(function (event) {
+         $('profile_img').mousemove(function (event) {
              var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
              var moveY = (($(window).height() / 2) - event.pageY) * 0.1;
-             $('body').css('margin-left', moveX + 'px');
-             $('body').css('margin-top', moveY + 'px');
-             $('body').css('margin-left', -moveX + 'px');
-             $('body').css('margin-top', -moveY + 'px');
+             $('profile_img').css('margin-left', moveX + 'px');
+             $('profile_img').css('margin-top', moveY + 'px');
+             $('profile_img').css('margin-left', -moveX + 'px');
+             $('profile_img').css('margin-top', -moveY + 'px');
          });*/
     </script>
 
@@ -271,7 +304,6 @@
         }
     </style>
     <script>
-        document.getElementById("showsnow").style.display = "block";
         // Array to store our Snowflake objects
         var snowflakes = [];
 
