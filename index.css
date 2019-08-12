@@ -30,14 +30,14 @@ body{
 }
 
 #spinner {
-    animation: rotate 0.5s infinite linear;
-    width:50px;
-    height:50px;
+    animation: rotate 0.4s infinite linear;/*0.5*/
+    width:100px;/*50*/
+    height:100px;/*50*/
     border:2px solid var(--bg-color);
-    border-bottom:2px solid var(--text-color);
-    border-radius:50%;
+    border-bottom:8px solid var(--text-color);
+    border-radius:100%;
     margin:0;
-}
+  }
 
 @keyframes rotate {
     0% {transform: rotate(0deg);}
@@ -75,7 +75,6 @@ body{
 }
 
 .snowflake {
-    position: fixed;
     background-color: gray;
     user-select: none;
     z-index: 1000;
@@ -292,8 +291,7 @@ body{
     display:inline-block;
     border-radius:5px;
     color:var(--text-color);
-    border:1px solid rgb(0, 0, 0, 0.08);
-    background-image: linear-gradient(+90deg,#f5f5f5 , #EFC1FD    ,#D273EE    ,#AB31CF    ,#8600AD);
+    border:3px solid rgb(0, 0, 0, 0.08);
     box-shadow:0px 0px 0px rgb(0, 0, 0, 0);
     transition:0.4s ease-in-out;
     margin:2vh 0px;
@@ -305,6 +303,8 @@ body{
     border:1px solid rgb(0, 0, 0, 0);
     box-shadow:0px 15px 35px rgb(0, 0, 0, 0.06);
     transform:scale(1.03);
+    background-image: linear-gradient(+90deg,#f5f5f5 , #EFC1FD    ,#D273EE    ,#AB31CF    ,#8600AD);
+  
 }
 
 .section_title {
