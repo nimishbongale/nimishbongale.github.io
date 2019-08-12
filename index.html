@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="nimishbongalewebsite" content="Nimish Bongale's Personal Portfolio">
+    <meta name="Description" content="Author: Nimish Bongale,
+    My Personal Website">
     <title>Nimish Bongale - My personal website</title>
     <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -15,7 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="https://avatars1.githubusercontent.com/u/43414361?v=4" type="image/png">
+    <link rel="icon" href="https://avatars1.githubusercontent.com/u/43414361?v=4" type="image/png" lazyload="on">
 </head>
 
 <body>
@@ -29,19 +30,18 @@
         <div id="userbio" style="display: block;">Software developer, Freelancer</div>
         <div id="about">
             <span style="display:block;"><i class="fab fa-linkedin-in"></i> &nbsp;&nbsp;<a
-                    href="https://www.linkedin.com/in/nimish-bongale/">https://www.linkedin.com/in/nimish-bongale</a></span>
-            <span style="display:block;"><i class="fab fa-github"></i> &nbsp; <a
-                    href="https://github.com/nimishbongale">https://github.com/nimishbongale</a></span>
-            <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a
-                    href="https://nimishbongale.github.io">https://nimishbongale.web.app</a></span>
-            <span style="display:block"><i class="fas fa-envelope"></i> &nbsp; <a
-                    href="mailto:nimishnb98@gmail.com">nimishnb98@gmail.com</a></span>
+                    href="https://www.linkedin.com/in/nimish-bongale/" rel="noopener"
+                    target="_blank">https://www.linkedin.com/in/nimish-bongale</a></span>
+            <span style="display:block;"><i class="fab fa-github"></i> &nbsp; <a href="https://github.com/nimishbongale"
+                    rel="noopener" target="_blank">https://github.com/nimishbongale</a></span>
+            <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://nimishbongale.github.io"
+                    rel="noopener" target="_blank">https://nimishbongale.web.app</a></span>
+            <span style="display:block"><i class="fas fa-envelope"></i> &nbsp; <a href="mailto:nimishnb98@gmail.com"
+                    rel="noopener" target="_blank">nimishnb98@gmail.com</a></span>
             <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Bangalore, India </span>
         </div>
     </div>
-    <div id="snowflakeContainer">
-        <span class="snowflake"></span>
-    </div>
+
     <div id="display">
         <div id="work">
             <span>
@@ -52,7 +52,7 @@
                 </h1>
             </span>
             <div class="projects" id="work_section">
-                <a href="https://github.com/nimishbongale/BongChess" target="_blank">
+                <a href="https://github.com/nimishbongale/BongChess" target="_blank" rel="noopener">
                     <section>
                         <div class="section_title">BongChess</div>
                         <div class="about_section">
@@ -66,7 +66,7 @@
                         </div>
                     </section>
                 </a>
-                <a href="https://github.com/nimishbongale/TheSickestPro" target="_blank">
+                <a href="https://github.com/nimishbongale/TheSickestPro" target="_blank" rel="noopener">
                     <section>
                         <div class="section_title">TheSickestPro</div>
                         <div class="about_section">
@@ -81,7 +81,7 @@
                     </section>
                 </a>
 
-                <a href="https://github.com/nimishbongale/SmartHelmet" target="_blank">
+                <a href="https://github.com/nimishbongale/SmartHelmet" target="_blank" rel="noopener">
                     <section>
                         <div class="section_title">SmartHelmet</div>
                         <div class="about_section">
@@ -96,7 +96,7 @@
                     </section>
                 </a>
 
-                <a href="https://github.com/nimishbongale/OCR-App" target="_blank">
+                <a href="https://github.com/nimishbongale/OCR-App" target="_blank" rel="noopener">
                     <section>
                         <div class="section_title">OCR-App</div>
                         <div class="about_section">
@@ -110,7 +110,7 @@
                         </div>
                     </section>
                 </a>
-                <a href="https://github.com/nimishbongale/LaunchPedia" target="_blank">
+                <a href="https://github.com/nimishbongale/LaunchPedia" target="_blank" rel="noopener">
                     <section>
                         <div class="section_title">LaunchPedia</div>
                         <div class="about_section">
@@ -134,22 +134,29 @@
             </div>
         </div>
         <div id="footer">
-            <a href="https://github.com/nimishbongale" target="_blank">Made with <i class="fas fa-heart"></i> by Nimish
+            <a href="https://github.com/nimishbongale" target="_blank" rel="noopener">Made with <i
+                    class="fas fa-heart"></i> by Nimish
                 Bongale</a>
         </div>
     </div>
 
+    <div id="snowflakeContainer">
+        <span class="snowflake" style="display: block" id="showsnow"></span>
+    </div>
 
     <script type="text/javascript">
         setTimeout(function () {
             document.getElementById("loading").classList.add("animated");
             document.getElementById("loading").classList.add("fadeOut");
+
             setTimeout(function () {
                 document.getElementById("loading").classList.remove("animated");
                 document.getElementById("loading").classList.remove("fadeOut");
                 document.getElementById("loading").style.display = "none";
             }, 400);
         }, 800);
+
+
         $.getJSON("blog.json", function (blog) {
             blog = blog || [];
             if (blog.length == 0) {
@@ -240,6 +247,7 @@
 
         window.onload = function () {
             var elements = document.getElementsByClassName('typewrite');
+
             for (var i = 0; i < elements.length; i++) {
                 var toRotate = elements[i].getAttribute('data-type');
                 var period = elements[i].getAttribute('data-period');
@@ -263,6 +271,7 @@
         }
     </style>
     <script>
+        document.getElementById("showsnow").style.display = "block";
         // Array to store our Snowflake objects
         var snowflakes = [];
 
@@ -289,7 +298,6 @@
             }
         }
         setAccessibilityState();
-
         reduceMotionQuery.addListener(setAccessibilityState);
 
         //
@@ -344,6 +352,7 @@
         //
         // A performant way to set your snowflake's position and size
         //
+
         function setTransform(xPos, yPos, scale, el) {
             el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0) scale(${scale}, ${scale})`;
         }
@@ -386,7 +395,6 @@
 
             // remove the original snowflake because we no longer need it visible
             snowflakeContainer.removeChild(originalSnowflake);
-
             moveSnowflakes();
         }
 
@@ -394,7 +402,6 @@
         // Responsible for moving each snowflake by calling its update function
         //
         function moveSnowflakes() {
-
             if (enableAnimations) {
                 for (var i = 0; i < snowflakes.length; i++) {
                     var snowflake = snowflakes[i];
@@ -416,7 +423,6 @@
 
                 resetPosition = false;
             }
-
             requestAnimationFrame(moveSnowflakes);
         }
 
