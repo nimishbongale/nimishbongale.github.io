@@ -39,14 +39,6 @@ body{
     margin:0;
   }
 
-  #linner {
-    animation: line 2s linear forwards;
-    width:50px;/*50*/
-    height:50px;/*50*/  
-    border:2px solid var(--bg-color);
-    border-bottom:8px solid var(--text-color);
-  }
-
 @keyframes rotate {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
@@ -325,6 +317,36 @@ body{
     background-image: linear-gradient(+90deg,#f5f5f5 , #EFC1FD    ,#D273EE    ,#AB31CF    ,#8600AD);
   
 }
+
+#timeline:before {
+    background-image: linear-gradient(+90deg,#f5f5f5 , #EFC1FD    ,#D273EE    ,#AB31CF    ,#8600AD);
+    width: 8px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 5px;
+  }
+
+#timeline {
+    position: relative;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-left: 20px;
+  }
+
+#timeline:after {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(+90deg,#f5f5f5 , #EFC1FD    ,#D273EE    ,#AB31CF    ,#8600AD);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+  }
 
 i:hover {
     cursor: pointer;
