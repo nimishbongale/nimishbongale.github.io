@@ -313,7 +313,7 @@ body{
     cursor: pointer;
     border:1px solid rgb(0, 0, 0, 0);
     box-shadow:0px 15px 35px rgb(0, 0, 0, 0.06);
-    transform:scale(1.03);
+    transform:scale(1.02);
     background-image: linear-gradient(+90deg,#f5f5f5 , #EFC1FD    ,#D273EE    ,#AB31CF    ,#8600AD);
   
 }
@@ -348,12 +348,16 @@ body{
     border-radius: 10px;
   }
 
+  i {
+      transform: scale(1);
+  }
+
 i:hover {
     cursor: pointer;
     border:1px solid rgb(0, 0, 0, 0);
     box-shadow:0px 15px 35px rgb(0, 0, 0, 0.06);
-    transform:scale(3.0);
     background-image: linear-gradient(0deg,#f5f5f5 , #f8f8f8, #f3f3f3, #EEEEEE);
+    transform:scale(1.02);
 }
 
 .section_title {
