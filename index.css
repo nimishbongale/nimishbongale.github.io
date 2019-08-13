@@ -39,10 +39,29 @@ body{
     margin:0;
   }
 
+  #linner {
+    animation: line 2s linear forwards;
+    width:50px;/*50*/
+    height:50px;/*50*/  
+    border:2px solid var(--bg-color);
+    border-bottom:8px solid var(--text-color);
+  }
+
 @keyframes rotate {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
+
+@keyframes line {
+    from {
+      left:10%;
+      width:0%;
+    }
+    to {
+      left:10%;
+      width:200%;
+    }
+  }
 
 #profile {
     width:24vw;
@@ -305,6 +324,14 @@ body{
     transform:scale(1.03);
     background-image: linear-gradient(+90deg,#f5f5f5 , #EFC1FD    ,#D273EE    ,#AB31CF    ,#8600AD);
   
+}
+
+i:hover {
+    cursor: pointer;
+    border:1px solid rgb(0, 0, 0, 0);
+    box-shadow:0px 15px 35px rgb(0, 0, 0, 0.06);
+    transform:scale(3.0);
+    background-image: linear-gradient(0deg,#f5f5f5 , #f8f8f8, #f3f3f3, #EEEEEE);
 }
 
 .section_title {
