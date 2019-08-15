@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
@@ -24,8 +25,9 @@
     <div id="loading">
         <div id="spinner"></div>
     </div>
+
     <div id="profile">
-        <div id="profile_img" style="background: url(https://avatars1.githubusercontent.com/u/43414361?v=4) center;">
+        <div id="profile_img" class="animated wobble delay-1s" style="background: url(https://avatars1.githubusercontent.com/u/43414361?v=4) center;">
         </div>
         <div id="username"><span style="display:block;">Nimish Bongale</span></div>
         <div id="userbio" style="display: block;">Software developer, Freelancer</div>
@@ -44,12 +46,31 @@
     </div>
 
     <div id="display">
-        <div id="work">
-            <h2>&nbsp;
+        <div id="work" class="animated lightSpeedIn delay-1s">
+            <!--<h1>&nbsp;
                 <u class="typewrite" data-period="2000"
-                    data-type='[ "Hello, I&#39;m Nimish Bongale.", "An Engineering Student.", "A Freelancer.","A Software Developer."]'>
+                    data-type='[ "Welcome!", "I&#39;m Nimish.", "A Student.", " A Freelancer."," A Developer."]'>
                 </u>
-            </h2>
+            </h1>-->
+            <center>
+            <div id="fh5co-header" role="banner" data-colorbg="#222222" data-next="yes">
+                        <div class="fh5co-text-wrap animate-box">
+                            <div class="fh5co-intro-text">
+                                <hr>
+                                    <h1>Hello! I&acute;m Nimish Bongale, A Freelance Developer based <span>in</span> Bangalore, India</h1>
+                                <h2>Get to know me better!</h2>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+                    <div class="btn-next animate-box fh5co-learn-more">
+                        <a href="#" class="scroll-btn" style="color: #fff">
+                            <center>
+                                    <span >Explore my portfolio</span><br><i class="fas fa-chevron-down"></i>
+                            </center>
+                        </a>
+                    </div>
         </div>
 
         <div id="afterforks1" style="display:block">
@@ -103,7 +124,7 @@
                         <i class="devicon-git-plain colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;padding-top: 10px; padding-inline-end: 10px;"></i>&nbsp;&nbsp;
                     </div>
                     <div style="padding-top: 15px;">
-                        <i class="devicon-github-plain colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;padding-top: 10px; padding-inline-end: 10px;"></i>&nbsp;&nbsp;
+                        <i class="devicon-github-plain" style="font-size: 4em; padding-right: 10px; padding-left: 10px;padding-top: 10px; padding-inline-end: 10px;"></i>&nbsp;&nbsp;
                         <i class="devicon-html5-plain colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;padding-top: 10px; padding-inline-end: 10px;"></i>&nbsp;&nbsp; 
                         <i class="devicon-java-plain colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;padding-top: 10px; padding-inline-end: 10px;"></i>&nbsp;&nbsp; 
                         </div>
@@ -166,8 +187,8 @@
                                         </section>
                                     </a>
                                 </div><br>
-                                <div style="padding-top: 30px;">
-                                <div id="timeline" style="padding-top: 30px;">
+                            
+                                <div id="timeline">
                                         <a href="https://divum.in" target="_blank" rel="noopener">
                                             <section>
                                                 <div class="section_title">Intern - Divum Corporate Services</div>
@@ -181,7 +202,7 @@
                                             </section>
                                         </a>
                                     </div>
-                                <div id="timeline" style="padding-top: 45px;">
+                                <div id="timeline">
                                         <a href="https://github.com/nimishbongale/SmartHelmet" target="_blank" rel="noopener">
                                             <section>
                                                 <div class="section_title">Freelancer</div>
@@ -194,10 +215,9 @@
                                             </section>
                                         </a>
                                     </div>
-                                </div>
                         </div>
                     </ul><br>   
-                    &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;<a href="" download="">Download Resume</a>
+                    &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;<a href="" download="">Download Resume</a>
            
                 </div>
                  </div>
@@ -377,16 +397,16 @@
     </script>
 
     <script>
-        /*  var windowWidth = $(window).width();
+        var windowWidth = $(window).width();
 
-          $('.typewrite').mousemove(function (event) {
-              var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
-              var moveY = (($(window).height() / 2) - event.pageY) * 0.1;
-              $('.typewrite').css('margin-top', moveY + 'px');
-              $('.typewrite').css('margin-left', -moveX + 'px');
-              $('.typewrite').css('margin-top', -moveY + 'px');
-              $('.typewrite').css('margin-left', moveX + 'px');
-          });*/
+          $('body').mousemove(function (event) {
+              var moveX = (($(window).width()/2) - event.pageX) * 0.025;
+              var moveY = (($(window).height()/2) - event.pageY) * 0.025;
+              $('#profile_img').css('margin-top', moveY + 'px');
+              $('#profile_img').css('margin-left', -moveX + 'px');
+              $('#profile_img').css('margin-top', -moveY + 'px');
+              $('#profile_img').css('margin-left', moveX + 'px');
+          });   
     </script>
 
     <script>
