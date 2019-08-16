@@ -573,7 +573,8 @@ i:hover {
   height: 200px;
   background-color: #181818;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
 }
 .container .card:before {
   content: "";

@@ -16,6 +16,8 @@
      <link rel="stylesheet" href="index.css">
     <link rel="icon" href="https://avatars1.githubusercontent.com/u/43414361?v=4" type="image/png" lazyload="on">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -69,7 +71,7 @@
                     </div><br><br><br><br><br><br>
         </div>
        
-        <div id="gtco-features-3" style="display:block;" class="animated slideInUp delay-1s">
+        <div id="gtco-features-3" style="display:block;"  data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
                 <h2><u>Projects</u></h2>  <br><br><br>
             <div class="gtco-container">
                 <div class="gtco-flex">
@@ -107,7 +109,7 @@
             </div>
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div id="gtco-features-3" style="display:block;" class="animated slideInUp delay-1s">
+        <div id="gtco-features-3" style="display:block;"  data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
             <h2><u>Research Work</u></h2>  <br><br><br>
         <div class="gtco-container">
             <div class="gtco-flex">
@@ -119,7 +121,6 @@
                         <h3>Spider Monkey Optimization</h3>
                         <p>Explored the effectiveness of SMO Algorithm and its variants</p>
                         <p><a href="https://github.com/nimishbongale/SpiderMonkey" class="btn btn-white" target="_blank" rel="noopener">Learn More</a></p>
-                        <i>This project is currently private.</i>
                     </div>
                 </div>
                 <div class="feature feature-2 animate-box">
@@ -130,7 +131,6 @@
                         <h3>Comparison and Contrasting between various Deep Learning Optimization Algorithms</h3>
                         <p>Surveyed the fitness of various Deep Learning Optimization Algorithms</p>
                         <p><a href="https://github.com/nimishbongale/SpiderMonkey" class="btn btn-white" target="_blank" rel="noopener">Learn More</a></p>
-                        <i>This project is currently private.</i>
                     </div>
                 </div>
                 <div class="feature feature-3 animate-box">
@@ -141,15 +141,13 @@
                         <h3>Breast Cancer Detection using Image Processing and Deep Learning</h3>
                         <p>Developed a solution which aims to minimize the cost of cancer detection.</p>
                         <p><a href="https://github.com/nimishbongale/IC2" class="btn btn-white" target="_blank" rel="noopener">Learn More</a></p>
-                        <i>This project is currently private.</i>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-        <div id="afterforks3" style="display:block">
+    <i>(Projects may be currently private)</i>
+        <div id="afterforks3" style="display:block;" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <h2><u>Resume</u></h2>
             <div class="projects" id="forks_section3">
                 <ul>
@@ -196,7 +194,7 @@
             </div>
         </div><br>
 
-        <div id="afterforks5" style="display:block">
+        <div id="afterforks5" style="display:block"  data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500">
                 <div class="projects" id="forks_section5">
                     <ul>
                         <li>
@@ -261,11 +259,11 @@
                     <a href="" download="" style="float: right; color:#fff;">Download Resume</a>
            
                 </div>
-                 </div><br><br><br>
-                 <h2><u>Portfolio</u></h2><br><br><br><br><br><br>
+                 </div><br><br>
+                 <h2><u>Portfolio</u></h2><br>
         <div class="container">
-            <div class="animated zoomInLeft delay-1s">
-            <div class="card" style="border-top-left-radius: 5px; border-top-right-radius: 5px;" onclick="showDetails(1)" >
+            <div id="firstleft" style="display: block;">
+            <div class="card" style="border-top-left-radius: 5px; border-top-right-radius: 5px;" data-aos="fade-right" data-aos-duration="2000" >
                 <h2>Course</h2>
                 <i class="fas fa-arrow-right" id="turnarrow1"></i>
                 <p>Summary<br>Course</p>
@@ -303,11 +301,11 @@
                 </button>
             </div>
             <div class="animated slideInDown" style="display:none" id="showthis1">
-                <p>Bachelor of Engineering in Information Science<br><br><center><a href="#" class="btn btn-white">View Course Details</a><br><br><a href="#" class="btn btn-white">View other certifications</a></center></p>    
+                <p>Bachelor of Engineering in Information Science<hr><br><center><a href="http://msrit.edu/department/ise.html" class="btn btn-white">View Course Details</a><br><br><a href="https://www.linkedin.com/in/nimish-bongale/#certifications-section" class="btn btn-white">View other certifications</a></center></p>    
             </div>
             </div>
-            <div class="animated zoomInRight delay-1s">
-            <div class="card card2" onclick="showDetails(2)" >
+            <div id="secondright" style="display:block;">
+            <div class="card card2" data-aos="fade-left" data-aos-duration="2000" >
                 <h2>Cognize</h2>
                 <i class="fas fa-arrow-right" id="turnarrow2"></i>
                 <p>Recognitions</p>
@@ -341,13 +339,13 @@
                 </button>
             </div>
             <div class="animated slideInDown" style="display:none" id="showthis2">
-                    <p>Hello World</p>    
-                </div>
+                <center><p>Snapshot of my Recognitions<hr><br><p><i class="fas fa-trophy"></i>&nbsp;&nbsp;Winner @ IBM Call for Code Local Hack 2019</p><p><i class="fas fa-award"></i>&nbsp;&nbsp;Student research paper pending approval</p><br><a href="#" class="btn btn-white">View all by downloading resume</a></p></center>    
+            </div>
         </div>
 
 
-        <div class="animated zoomInLeft delay-1s">
-        <div class="card card2" onclick="showDetails(3)" >
+        <div id="thirdleft" style="display:block;">
+        <div class="card card2" data-aos="fade-right" data-aos-duration="2000"  >
                 <h2>Develop</h2>
                 <i class="fas fa-arrow-right" id="turnarrow3"></i>
                 <p>Professional Development</p>
@@ -381,12 +379,12 @@
                 </button>
             </div>
             <div class="animated slideInDown" style="display:none" id="showthis3">
-                    <p>Hello World</p>    
-                </div>
+                <center><p>Professional Development Activities<hr><br><a href="https://github.com/nimishbongale" class="btn btn-white">View Github for Open Source Contributions</a><br><br><a href="https://www.linkedin.com/in/nimish-bongale" class="btn btn-white">View Internship letters</a></p></center> 
+            </div>
         </div>
 
-        <div class="animated zoomInRight delay-1s">
-        <div class="card card2" onclick="showDetails(4)" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+        <div id="fourthright" style="display:block;">
+        <div class="card card2" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;" data-aos="fade-left" data-aos-duration="2000" >
                 <h2>Network</h2>
                 <i class="fas fa-arrow-right" id="turnarrow4" ></i>
                 <p>Community <br>Engagement</p>
@@ -420,15 +418,15 @@
                 </button>
             </div>
             <div class="animated slideInDown" style="display:none" id="showthis4">
-                    <p>Hello World</p>    
-                </div>
+                <center><p>Social Welfare Activities<hr><br><a href="https://www.meetup.com/members/279635672/" class="btn btn-white">View Conferences & Meetups attended</a><br><br><a href="#" class="btn btn-white">View NGO contributions by downloading Resume
+                </a></p></center> 
             </div>
         </div>
         
-        <br><br><br><br>
+        <br><br>
 
-        <div id="forks" style="display:block">
-            <h2><u>Github Repositories</u></h2>
+        <div id="forks" style="display:block;" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1200">
+            <h2><u>Github Repositories at a glance</u></h2>
             <div class="projects" id="forks_section">
                 <a href="https://github.com/nimishbongale/TheSickestPro" target="_blank" rel="noopener">
                     <section>
@@ -605,65 +603,9 @@
           });   
     </script>
 
-  <!--<script>
-        var TxtType = function (el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
-
-        TxtType.prototype.tick = function () {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-            var that = this;
-            var delta = 200 - Math.random() * 100;
-
-            if (this.isDeleting) { delta /= 2; }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(function () {
-                that.tick();
-            }, delta);
-        };
-
-        window.onload = function () {
-            var elements = document.getElementsByClassName('typewrite');
-
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite {color:#000, } > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
-        };
-    </script>-->
+    <script>
+            AOS.init();
+          </script>
 
     <style>
         #snowflakeContainer {
