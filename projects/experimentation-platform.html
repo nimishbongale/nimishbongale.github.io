@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inference Optimization Pipeline | Nimish Bongale</title>
+  <meta name="description" content="Case study: LLM/SLM fine-tuning and quantization pipeline for high-throughput, large-context inference services.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Inference Optimization Pipeline | Nimish Bongale">
+  <meta property="og:description" content="Fine-tuning and quantization with ONNX, AWQ, GPTQ, and production deployment on AWS.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://nimishbongale.github.io/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Inference Optimization Pipeline",
+      "author": {
+        "@type": "Person",
+        "name": "Nimish Bongale"
+      },
+      "description": "Pipeline for tuning and quantizing LLM/SLM models for efficient large-context inference.",
+      "keywords": ["Inference Optimization", "ONNX", "AWQ", "GPTQ", "Model Serving"],
+      "url": "https://nimishbongale.github.io/projects/experimentation-platform.html"
+    }
+  </script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <main class="container case">
+    <a class="back mono" href="../index.html#projects">Back to portfolio</a>
+
+    <article class="case-hero">
+      <p class="kicker mono">Accelerator-Aware Model Serving</p>
+      <h1>Inference Optimization Pipeline</h1>
+      <p class="summary">
+        Built a pipeline to fine-tune and quantize LLM/SLM families and deploy them as efficient services,
+        achieving high throughput with very large context windows for practical enterprise use cases.
+      </p>
+      <div class="meta-grid">
+        <div class="meta-card">
+          <p class="meta-label mono">Role</p>
+          <p class="meta-value">Senior AI Research Engineer</p>
+        </div>
+        <div class="meta-card">
+          <p class="meta-label mono">Models</p>
+          <p class="meta-value">Whisper, Phi, Llama, Mistral</p>
+        </div>
+        <div class="meta-card">
+          <p class="meta-label mono">Deployment</p>
+          <p class="meta-value">AWS SageMaker</p>
+        </div>
+        <div class="meta-card">
+          <p class="meta-label mono">Focus</p>
+          <p class="meta-value">Performance and scale</p>
+        </div>
+      </div>
+    </article>
+
+    <section class="section">
+      <h2>Problem</h2>
+      <p>
+        LLM workloads required improved throughput and latency without sacrificing context length, while still meeting
+        production constraints around reliability and operational cost.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Approach</h2>
+      <ul class="list">
+        <li>Fine-tuned and quantized multiple model families using ONNX, AWQ, and GPTQ methods.</li>
+        <li>Benchmarked model variants across throughput, memory footprint, and context-window behavior.</li>
+        <li>Deployed optimized serving endpoints with cloud-native orchestration and Kubernetes-based release controls.</li>
+        <li>Integrated observability and quality checks for safe operation under real workload patterns.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Tech Stack</h2>
+      <div class="chip-wrap mono">
+        <span class="chip">ONNX Runtime</span>
+        <span class="chip">AWQ</span>
+        <span class="chip">GPTQ</span>
+        <span class="chip">Kubernetes</span>
+        <span class="chip">AWS SageMaker</span>
+        <span class="chip">Python</span>
+        <span class="chip">MLOps</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Outcomes</h2>
+      <div class="metric-grid">
+        <article class="metric-card">
+          <p class="metric-value">100+</p>
+          <p class="metric-label">Tokens/sec achieved</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-value">128K+</p>
+          <p class="metric-label">Context window support</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-value">5+</p>
+          <p class="metric-label">Models fine-tuned and quantized</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-value">50%</p>
+          <p class="metric-label">Cost reduction on optimized workloads</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Key Learning</h2>
+      <p>
+        Performance engineering for ML services is a full-stack discipline that combines model-level optimization,
+        deployment architecture, and ongoing runtime observability.
+      </p>
+    </section>
+
+    <section class="footer-actions">
+      <a class="btn btn-primary" href="../index.html">Discuss this project</a>
+      <a class="btn btn-secondary" href="https://github.com/nimishbongale" target="_blank" rel="noreferrer">GitHub Profile</a>
+    </section>
+  </main>
+</body>
+</html>
